@@ -6,7 +6,18 @@ import java.util.Scanner;
 
 public class StudentGradeTest {
     public static void main(String[] args) {
-        List<Student> studentList = new ArrayList<>();
+        String ko = "인덕대학교 컴퓨터소프트웨어학과";
+        String en = "Induk Universiry, Dept. of Computer Software";
+
+        int idx = en.indexOf("Dept");
+        System.out.println(en.substring(idx));
+
+        System.out.println(ko.substring(6,  9));
+        if(en.contains("comso"))
+            System.out.println(true);
+        else
+            System.out.println("false");
+       /* List<Student> studentList = new ArrayList<>();
         Scanner sc = new Scanner(System.in); //키보드 입력을 받아 지정된 유형으로 반환
         int count = 0;
         do {
@@ -30,6 +41,6 @@ public class StudentGradeTest {
         for(Student student : studentList){
             Grade grade = student.getGrade();
             System.out.format("%10d %10s %7.2f %7.2f\n", student.getHakbun(), student.getName(), grade.calcAberage(), grade.calcSum());
-        }
+        }*/
     }
 }

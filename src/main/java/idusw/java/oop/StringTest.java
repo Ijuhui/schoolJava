@@ -17,10 +17,17 @@ public class StringTest {
         String[] stringArray = new String[10];
         ArrayList<String> stringArrayList = new ArrayList<>(10);
 
-        String[] newArray = new String[15];
-        for (int i = 0; i < stringArray.length; i++)
+       /* String[] newArray = new String[15];
+        for (int i = 0; i < newArray.length; i++)
             newArray[i] = stringArray[i];
         //5개의 String 추가할 수 있음
+
+       */
+
+        for (int i = 0 ; i < 15; i++)
+            stringArrayList.add("str" + i);
+        for(String s : stringArrayList)
+            System.out.println(s + ",");
 
 
         System.out.println(greeting + " ");
